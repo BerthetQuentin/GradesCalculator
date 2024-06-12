@@ -1,10 +1,10 @@
 # Define the grades and their weights including the exam grade
 grades_with_exam = {
-    "labo 1": {"weight": 10, "grade": 3.6},
-    "labo 2": {"weight": 15, "grade": 4.6},
-    "labo 3": {"weight": 25, "grade": 5.3},
-    "présentation": {"weight": 5, "grade": 4.0},
-    "examen": {"weight": 45, "grade": 6.0}
+    "grade 1": {"weight": 10, "grade": 3.6},
+    "grade 2": {"weight": 15, "grade": 4.6},
+    "grade 3": {"weight": 25, "grade": 5.3},
+    "grade 4": {"weight": 5, "grade": 4.0},
+    "grade 5": {"weight": 45, "grade": 6.0}
 }
 
 # Calculate the total weighted sum of the grades
