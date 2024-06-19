@@ -13,7 +13,7 @@ def calculate_grades(grades):
     overall_grade = total_weighted_sum / total_weight
 
     # Round the overall grade to the nearest 0.1 and the nearest 0.5
-    precise_overall_grade = round(overall_grade * 10) / 10
+    precise_overall_grade = round(overall_grade * 100) / 100
     rounded_overall_grade = round(overall_grade * 2) / 2
 
     return precise_overall_grade, rounded_overall_grade
