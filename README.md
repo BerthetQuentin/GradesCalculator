@@ -13,6 +13,7 @@ Pour installer le package, vous pouvez utiliser `pip` après avoir construit le 
 ```bash
 python setup.py sdist bdist_wheel
 pip install dist/gradescalculator-0.2-py3-none-any.whl
+pip install -e .
 ```
 
 ## Utilisation
@@ -20,7 +21,7 @@ pip install dist/gradescalculator-0.2-py3-none-any.whl
 Une fois installé, vous pouvez utiliser le script en ligne de commande pour calculer les notes. Voici comment l'utiliser :
 
 ```bash
-calcule_notes note1 poids1 note2 poids2 note3 poids3 ...
+average note1 poids1 note2 poids2 note3 poids3 ...
 ```
 
 ### Exemple
@@ -34,14 +35,14 @@ Supposons que vous avez les notes et poids suivants :
 Pour calculer la note globale, exécutez la commande suivante :
 
 ```bash
-calcule_notes 3.6 10 4.6 15 5.3 25 4.0 5 4.9 45
+average 3.6 10 4.6 15 5.3 25 4.0 5 4.9 45
 ```
 ### Résultat
 
 Le script affichera la note globale précise arrondie à 0.1 près et arrondie à 0.5 près :
 
 ```bash
-Precise Overall Grade (rounded to the nearest 0.1): X.X
+Precise Overall Grade (rounded to the nearest 0.01): X.X
 Rounded Overall Grade (rounded to the nearest 0.5): Y.Y
 ```
 
@@ -56,9 +57,17 @@ gradescalculator/
 │   ├── __init__.py
 │   └── main.py
 │
+├── tests/
+│   ├── __init__.py
+│   └── test_calculations.py
+│
+├── dist/
+│   └── gradescalculator-0.2-py3-none-any.whl
+│
+├── build/
+├── gradescalculator.egg-info/
 ├── setup.py
 └── README.md
-
 ```
 
 ## Auteur
