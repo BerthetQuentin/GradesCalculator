@@ -1,5 +1,3 @@
-# tests/test_calculations.py
-
 from gradescalculator.main import calculate_grades
 
 def test_calculate_grades():
@@ -13,5 +11,6 @@ def test_calculate_grades():
     
     precise_grade, rounded_grade = calculate_grades(grades)
     
-    assert precise_grade == 4.7  # Remplacer par la valeur attendue correcte
-    assert rounded_grade == 4.5  # Remplacer par la valeur attendue correcte
+    assert precise_grade == 4.8
+    assert rounded_grade == 5.0
+
