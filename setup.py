@@ -6,7 +6,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'gradescalculator=gradescalculator.main:main',
+            'calcule_notes=gradescalculator.main:main',
         ],
     },
     author='Quentin Berthet',
