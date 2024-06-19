@@ -12,7 +12,7 @@ Pour installer le package, vous pouvez utiliser `pip` après avoir construit le 
 
 ```bash
 python setup.py sdist bdist_wheel
-pip install .
+pip install dist/gradescalculator-0.2-py3-none-any.whl
 ```
 
 ## Utilisation
