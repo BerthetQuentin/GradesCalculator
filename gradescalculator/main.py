@@ -1,8 +1,8 @@
-# monpackage/main.py
+# gradescalculator/main.py
 
 import argparse
 
-def GradesCalculator(grades):
+def calculate_grades(grades):
     # Calculate the total weighted sum of the grades
     total_weighted_sum = sum(item["weight"] * item["grade"] for item in grades.values())
 
@@ -28,7 +28,7 @@ def main():
     for i in range(0, len(args.grades), 2):
         grades[f'grade {i//2 + 1}'] = {"weight": args.grades[i+1], "grade": args.grades[i]}
 
-    precise_grade, rounded_grade = GradesCalculator(grades)
+    precise_grade, rounded_grade = calculate_grades(grades)
     
     print(f"Precise Overall Grade (rounded to the nearest 0.1): {precise_grade}")
     print(f"Rounded Overall Grade (rounded to the nearest 0.5): {rounded_grade}")

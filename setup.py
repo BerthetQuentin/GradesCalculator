@@ -1,17 +1,17 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='GradesCalculator',
+    name='gradescalculator',
     version='0.1',
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'GradesCalculator=GradesCalculator.main:main',
+            'gradescalculator=gradescalculator.main:main',
         ],
     },
     author='Quentin Berthet',
     author_email='quentin@berthet.ch',
-    description='Un package pour calculer des notes avec des poids différent.',
+    description='Un package pour calculer des notes avec des poids différents.',
     url='https://github.com/BERTHETquentin/GradesCalculator',
     classifiers=[
         'Programming Language :: Python :: 3',
