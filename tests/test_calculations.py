@@ -11,6 +11,6 @@ def test_calculate_grades():
     
     precise_grade, rounded_grade = calculate_grades(grades)
     
-    assert precise_grade == 4.8
+    assert precise_grade == 4.78
     assert rounded_grade == 5.0
 
