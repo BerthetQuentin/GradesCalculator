@@ -2,11 +2,11 @@ from setuptools import setup, find_packages
 
 setup(
     name='gradescalculator',
-    version='0.3',
+    version='0.4',
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'calcule_notes=gradescalculator.main:main',
+            'average=gradescalculator.main:main',
         ],
     },
     author='Quentin Berthet',
