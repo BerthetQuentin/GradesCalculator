@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -44,3 +43,12 @@ jobs:
       env:
         TWINE_USERNAME: __token__
         TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+
+    - name: Publish package to GitHub Packages
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      run: |
+        python -m pip install twine
+        twine upload --repository-url https://upload.github.com/${{ github.repository }}/dist/*
+      env:
+        TWINE_USERNAME: ${{ github.actor }}
+        TWINE_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
