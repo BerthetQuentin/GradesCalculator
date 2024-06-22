@@ -16,6 +16,12 @@ pip install dist/gradescalculator-0.2-py3-none-any.whl
 pip install -e .
 ```
 
+Vous pouvez aussi le télécharger via le gestionnaire de paquets [pip](https://pypi.org/project/pip/)
+
+```bash
+pip install gradescalculator
+```
+
 ## Utilisation
 
 Une fois installé, vous pouvez utiliser le script en ligne de commande pour calculer les notes. Voici comment l'utiliser :
@@ -71,4 +77,4 @@ gradescalculator/
 ```
 
 ## Auteur
-- Quentin Berthet - [profil github](https://github.com/BERTHETquentin)
+- Quentin Berthet - [github](https://github.com/BERTHETquentin)
