@@ -7,6 +7,9 @@
 Pour installer le package, vous pouvez utiliser `pip` après avoir construit le package localement. Suivez ces étapes :
 
 1. Clonez le dépôt ou téléchargez les fichiers nécessaires.
+```bash
+git clone https://github.com/BERTHETquentin/GradesCalculator.git
+```
 2. Assurez-vous d'être dans le répertoire contenant `setup.py`.
 3. Exécutez les commandes suivantes :
 
@@ -16,7 +19,7 @@ pip install dist/gradescalculator-0.2-py3-none-any.whl
 pip install -e .
 ```
 
-Vous pouvez aussi le télécharger via le gestionnaire de paquets [pip](https://pypi.org/project/pip/)
+Vous pouvez aussi le télécharger directement via le gestionnaire de paquets [pip](https://pypi.org/project/pip/)
 
 ```bash
 pip install gradescalculator
