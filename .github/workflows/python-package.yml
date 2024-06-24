@@ -30,6 +30,7 @@ jobs:
 
     - name: Verify distribution files
       run: |
+        echo "Listing files in dist directory:"
         ls -l dist/
 
     - name: Test with pytest
