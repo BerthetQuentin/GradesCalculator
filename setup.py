@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='gradescalculator',
-    version='1.11',
+    version='1.12',
     packages=find_packages(),
     entry_points={
         'console_scripts': [
