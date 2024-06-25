@@ -44,6 +44,7 @@ Supposons que vous avez les notes et poids suivants :
 - Note 3 : 5.3 avec un poids de 25
 - Note 4 : 4.0 avec un poids de 5
 - Note 5 : 4.9 avec un poids de 45
+  
 Pour calculer la note globale, exécutez la commande suivante :
 ```bash
 average 3.6 10 4.6 15 5.3 25 4.0 5 4.9 45
