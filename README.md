@@ -25,6 +25,8 @@ Vous pouvez aussi le télécharger directement via le gestionnaire de paquets [p
 pip install gradescalculator
 ```
 
+le lien du package PyPi se trouve [ici](https://pypi.org/project/gradescalculator/)
+
 ## Utilisation
 
 Une fois installé, vous pouvez utiliser le script en ligne de commande pour calculer les notes. Voici comment l'utiliser :
