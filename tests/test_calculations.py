@@ -1,4 +1,4 @@
-from gradescalculator.main import calculate_grades
+from src.main import calculate_grades
 
 def test_calculate_grades():
     grades = {
