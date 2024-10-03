@@ -31,15 +31,6 @@ def calculate_grades(grades, method='weighted'):
     return precise_overall_grade, rounded_overall_grade
 
 def read_grades_from_csv(file_path):
-    """
-    Read grades from a CSV file.
-
-    Parameters:
-    - file_path (str): Path to the CSV file.
-
-    Returns:
-    - dict: Dictionary containing grades and their weights.
-    """
     grades = {}
     with open(file_path, newline='') as csvfile:
         reader = csv.reader(csvfile)
@@ -51,9 +42,6 @@ def read_grades_from_csv(file_path):
     return grades
 
 def main():
-    """
-    Main function to parse arguments and calculate the overall grade.
-    """
     parser = argparse.ArgumentParser(description="Calcule la note globale à partir des notes.")
     parser.add_argument('--csv', type=str, help='Chemin vers le fichier CSV contenant les notes et leurs poids.')
     parser.add_argument('--method', type=str, choices=['weighted', 'arithmetic', 'geometric'], default='weighted', help='Méthode de calcul de la note globale.')
