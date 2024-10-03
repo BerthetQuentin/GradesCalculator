@@ -4,16 +4,6 @@ import sys
 from math import prod
 
 def calculate_grades(grades, method='weighted'):
-    """
-    Calculate the overall grade based on the specified method.
-
-    Parameters:
-    - grades (dict): Dictionary containing grades and their weights.
-    - method (str): Method to calculate the overall grade ('weighted', 'arithmetic', 'geometric').
-
-    Returns:
-    - tuple: Precise overall grade rounded to the nearest 0.01 and 0.5.
-    """
     if method == 'weighted':
         # Calculate the total weighted sum and total weight
         total_weighted_sum = sum(item["weight"] * item["grade"] for item in grades.values())
